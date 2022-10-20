@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <style>
+        * {
+  box-sizing:border-box
+}
+h2 {
+  text-align: center;
+}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 6}
+}
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 6}
+}
+</style>
+</head>
+<body>
+    <header id="header" style="background-color:rgb(247, 239, 241) ;">
+        <div class="justify-content-between- d-flex-" style="border-top: 5px solid rgba(85, 62, 11, 0.863); background-color:#FFF">
+            <div class="container-fullrow" id="divTopHeader">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="logo" style="margin:0px 0px 0px 0px;text-align:center; z-index:2000;">
+                            <a href="BKC.html"><img src="./image/Gentleman-Logo-Graphics-1-1-580x386.png" width="65" alt="" title="" style="z-index:1000; padding-bottom: 0px;"></a>
+                        </div>
+                    </div>
+                    <div id="" class="col-lg-4" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div >
+            <div class="topnav">
+                <div class="topnav-centered">
+                  <a href="BKC.html" class="active">Home</a></div>
+                  <a href="product.html">Product</a>
+                  <a href="Blog.html">Blog</a>
+                <div class="topnav-right">
+                  <a href="Search.html">Search</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="aboutus.html">About Us</a></div>     
+              </div>
+              <div style="padding-left:16px"></div></div>
+        <br>
+    </header> 
+    <main class="main">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./image/1.jpg" style="width:100% ;height:400px;">
+            </div>
+            <div class="mySlides fade">
+              <img src="./image/2.jpg" style="width:100%; height: 400px;">
+            </div>
+            <div class="mySlides fade">
+              <img src="./image/3.jpg" style="width:100% ;height: 400px;">
+            </div>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+          </div>
+    </main>
+    <script>
+        var slideIndex;
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+            slides[slideIndex].style.display = "block";  
+            dots[slideIndex].className += " active";
+            slideIndex++;
+            if (slideIndex > slides.length - 1) {
+              slideIndex = 0
+            }    
+            setTimeout(showSlides, 10000);
+        }
+        showSlides(slideIndex = 0);
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+      </script>
+<div>
+    <section style="padding-top: 150px;">
+      <div class="services-area" style="margin-top:-120px;">
+        <div class="container">
+            <div class="row align-items-center-1">
+                <div class="col-lg-3">
+                    <div class="single-service" style="text-align:center;margin:0px 0 20px 0;border-top:5px solid #719B08;">
+                        <a href="" style="text-decoration:none;">
+                            <div class="thumbCol1" style="margin:15px 0 0px 0;">
+                                <img src="./image/Gentleman-Logo-Graphics-1-1-580x386.png" width="95" height="85" alt="">
+                            </div>
+                            <a href="productclock.html"><h4 style="color: #719B08;">CLOCK</h4></a>
+                        </a>
+                        <p style="text-align:justify; font-size:14px; font-weight:300">
+                          A clock will help you contemplate and understand the meaning and flow of time.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="single-service" style="text-align:center;margin:0px 0 20px 0; border-top:5px solid #F4782E;">
+                        <a href="" style="text-decoration:none;font-size:16px; font-weight:800">
+                            <div class="thumbCol2" style="margin:15px 0 0px 0;">
+                                <img src="./image/Gentleman-Logo-Graphics-1-1-580x386.png" width="95" height="85" alt="">
+                            </div>
+                            <a href="productwatch.html"><h4 style="color: #F4782E;">WATCH</h4></a>
+                        </a>
+                        <p style="text-align:justify; font-size:14px; font-weight:300">                            
+                          A watch will help you more luxurious, more elegant and more attractive in life.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="single-service" style="text-align:center;margin:0px 0 20px 0;border-top:5px solid #810100;">
+                        <a href="" style="text-decoration:none;">
+                            <div class="thumbCol3" style="margin:15px 0 0px 0;">
+                                <img src="./image/Gentleman-Logo-Graphics-1-1-580x386.png" width="95" height="85" alt="">
+                            </div>
+                            <a href="Phoneproduct.html"><h4 style="color: #810100;">PHONE</h4></a>
+                        </a>
+                        <p style="text-align:justify; font-size:14px; font-weight:300">
+                          An ancient phone on the outside, but inside there are many wonderful things with a long history.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="single-service" style="text-align:center;margin:0px 0 20px 0;border-top:5px solid #db3f3f;">
+                      <a href="" style="text-decoration:none;">
+                          <div class="thumbCol3" style="margin:15px 0 0px 0;">
+                              <img src="./image/Gentleman-Logo-Graphics-1-1-580x386.png" width="95" height="85" alt="">
+                          </div>
+                          <a href="productmusicplayer.html"><h4 style="color: #db3f3f;">MUSIC PLAYER</h4></a>
+                      </a>
+                      <p style="text-align:justify; font-size:14px; font-weight:300">
+                        If you like music then you can't miss this amazing music player.
+                      </p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="intro-area" style="background:url(./image/antiques-banner.jpg) center/cover;">
+      <div class="container-fullrow">
+          <div class="row fullscreen justify-content-between">
+              <div class="col-lg-12 intro-content" style="margin:50px 10px 0 40px">
+                  <h6 class="text-orange">DIFFERENCE CREATE BRANDS</h6>
+                  <h1 class="text-orange"><i>BKC ANTIQUES</i></h1>
+                  <p>
+                      <a href="aboutus.html" class="primary-btn text-uppercase" style="text-decoration:none;height:40px; width:200px; text-align:center;padding-top:5px;">See More</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+  <div style="height:460px; width: 100%;padding-top: 20px;background-color:rgba(94, 37, 37, 0.473);">
+    <div style="height: 450px;width:50%;float: left;padding-left: 20px;padding-top: 10px;"><img src="./image/a-man-reads-a-newspaper-george-marks.jpg" style="height:400px;width: auto;"></div>
+    <div style="height: 450px;width: 50%;float:right;">
+      <p style="text-align: center;font-size: 20px;color: black;">Want to know some news</p>
+      <a href="Blog.html" style="text-decoration: none;"><input type="button" value="Find out here" style=" margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%; background-color: #886969;height: 50px;width: 150px;border-radius: 10px;"></a>
+    </div>
+  </div>
+  <section>  
+    
+    <footer class="footer-distributed">
+    <div class="footer-left">
+      <h4>BKC Antiques and Auctions<span><img src="./image/Gentleman-Logo-Graphics-1-1-580x386.png" width="65" alt="" title="" style="z-index:1000; padding-bottom: 0px;"></span></h4>
+      <p class="footer-links">
+        <a href="BKC.html" class="link-1">Home</a>     
+        <a href="Blog.html">Blog</a>  
+        <a href="product.html">Product</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <p class="footer-company-name">BKC Antiques and Auctions © 2022</p>
+    </div>
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>225 Quan Hoa</span> Cầu Giấy, Hà Nội</p>
+      </div>
+    <div>
+        <i class="fa fa-phone"></i>
+        <p>+84.85296959</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p>alohabcd@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About Us</span>
+      Where to buy and sell antiques without price pressure, high quality products? Introducing you BKC Antiques Gallery. This is the convergence of many of the most precious and diverse treasures from products of high cultural and historical value, 
+      ensuring customer satisfaction when visiting, having the best experience at this.
+      </p>
+      <div class="footer-icons">
+      <a href="https://www.facebook.com/theantiquestory"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/theantiquestory/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.pinterest.com/theantiquestory/_created/"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="https://twitter.com/theantiquestory"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</section>  
+</body>
+</html>

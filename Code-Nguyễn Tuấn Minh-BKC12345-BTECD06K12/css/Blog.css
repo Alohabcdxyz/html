@@ -1,0 +1,30 @@
+#main #left ul{
+    margin: 0px;
+    padding: 0px;
+}
+#main #left ul li{
+    list-style: none;
+    clear: left;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    margin-bottom: 10px;
+}
+#main #left ul li img{
+    float: left;
+    margin-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+#main #left ul li h3{
+    font-size: 14px;
+}
+#main #left ul li p{
+    font-size: 12px;
+}
+#main #left ul li img{
+    height: 100px;
+    width: 100px;
+}
+#main{
+    margin-top: 10px;
+}
